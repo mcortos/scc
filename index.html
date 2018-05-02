@@ -25,9 +25,15 @@
     </div>
 
  
-
+    <?php
+    if(isset($_POST['submit']))
+    {
+        $name = $_POST['bill'];
+      }
+        ?>
+    
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <form method="post" attribute="" action="">
+      <form method="post" attribute="" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div class="row">
           <div class="col">
             <input type="text" name ="bill" class="form-control" placeholder="Monthly Bill">
@@ -41,7 +47,7 @@
 
     </div>
 
-<p>Your email address is: <?php echo $_SERVER['PHP_SELF']; ?></p>
+<p>Your email address is: <?php echo $name></p>
 
 
     <div class="container invisible" id="results">
