@@ -26,17 +26,17 @@
  
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <form class="form-inline">
-        <div class="form-group">
-          <label for="inputPassword4"></label>
-          <input type="password" id="inputPassword4" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
-          <small id="passwordHelpInline" class="text-muted">
-            Monthly usage in $
-          </small>
+      <formmethod="post" attribute="post" action="form.php">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
         </div>
       </form>
-      <button data-toggle="collapse" data-target="#results">Collapsible</button>
-      <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+      <button type="submit" name="answer" id="answer" value="answer">Calculate</button>
     </div>
 
     <div class="container invisible" id="results">
