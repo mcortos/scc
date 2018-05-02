@@ -39,13 +39,18 @@
       </form>
 
 
-      <FORM NAME ="form1" METHOD =" " ACTION = "">
+      <FORM NAME ="form1" METHOD ="POST" ACTION = "">
 
         <INPUT TYPE = "TEXT" VALUE ="username">
         <INPUT TYPE = "Submit" Name = "Submit1" VALUE = "Login">
         
         </FORM>
-     
+        <?PHP
+
+        $username = $_POST['username'];
+        print ($username);
+        
+        ?>
     
     </div>
 
