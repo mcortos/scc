@@ -18,60 +18,6 @@
 
   <body>
 
-    <?php
-
-    
-    $value =  $_POST['subject'];
-    $bill = $_POST['bill'];
-    $op = $_POST['op'];
-    $ops = $_POST['ops'];
-    $store = $_POST['store'];
-    $screen = $_POST['screen'];
-    $ans = $_POST['equal'];
-    
-    if (isset($_POST['screen'])) {
-        $screen = $number;
-        $screen = $ans;
-    }
-    
-    if (isset($_POST['op'])) {
-        $ops = $op;
-        $screen .= $ops;
-        $ans += $number;
-    }
-    
-    if (isset($_POST['number'])) {
-        $screen = $number;
-        $number = $screen;
-//        $number .= $tore;
-    }
-    //    $screen .= $ans;
-    if (isset($_POST['equal'])) {
-        $ans = $number + $op + $ans;
-        
-        //    if(isset($_POST['equal']))
-        //    {
-        switch ($op) {
-            case '-':
-                $ans = $number - $ans;
-                //                $screen = $ans;
-                break;
-            
-            case '+':
-                $ans = $number + $ans;
-                //                $screen = $ans;
-                break;
-            
-            case '*':
-                $ans = $number * $ans;
-                break;
-        }
-    }
-?>
-
-
-
-
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">SCC</h5>
@@ -84,7 +30,7 @@
       <formmethod="post" attribute="post" action="">
         <div class="row">
           <div class="col">
-            <input type="text" name ="subject" class="form-control" placeholder="Monthly Bill">
+            <input type="text" name ="bill" class="form-control" placeholder="Monthly Bill" value="bill">
           </div>
           <div class="col">
             <button type="submit"  class="btn btn-primary" name="answer" id="answer" value="answer">Calculate</button>
@@ -92,11 +38,14 @@
         </div>
       </form>
 
-      <?php
-if(isset($_POST['answer'])){
-echo $_POST['subject'];
-}
-?>
+
+      <FORM NAME ="form1" METHOD =" " ACTION = "">
+
+        <INPUT TYPE = "TEXT" VALUE ="username">
+        <INPUT TYPE = "Submit" Name = "Submit1" VALUE = "Login">
+        
+        </FORM>
+     
     
     </div>
 
