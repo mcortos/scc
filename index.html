@@ -19,6 +19,12 @@
   <body>
 
 
+    <?php
+  if (isset($_POST['submit'])) {
+    $example = $_POST['bill'];
+    echo $example;
+  }
+?>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">SCC</h5>
       <div><h5 class="">Calculate your customer support cost</h5></div>
@@ -27,30 +33,17 @@
  
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <formmethod="post" attribute="post" action="">
+      <form method="post" attribute="post" action="">
         <div class="row">
           <div class="col">
-            <input type="text" name ="bill" class="form-control" placeholder="Monthly Bill" value="bill">
+            <input type="text" name ="bill" class="form-control" placeholder="Monthly Bill">
           </div>
           <div class="col">
-            <button type="submit"  class="btn btn-primary" name="answer" id="answer" value="answer">Calculate</button>
+            <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
           </div>
         </div>
       </form>
 
-
-      <FORM NAME ="form1" METHOD ="POST" ACTION = "">
-
-        <INPUT TYPE = "TEXT" VALUE ="username">
-        <INPUT TYPE = "Submit" Name = "Submit1" VALUE = "Login">
-        
-        </FORM>
-        <?PHP
-
-        $username = $_POST['username'];
-        print ($username);
-        
-        ?>
     
     </div>
 
