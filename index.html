@@ -41,13 +41,15 @@
 
 
     </div>
-    <?php
-    if(isset($_POST['submit']))
-    {
-        $name = $_POST['bill'];
+    <form action="" method="post">
+      <input type="text" name="subject" id="subject" value="Car Loan">
+      <button type="submit" name="ok">OK</button>
+      </form>
+      <?php
+      if(isset($_POST['ok'])){
+      echo $_POST['subject'];
       }
-        ?>
-<p>Your email address is: <?php echo $name></p>
+      ?>
 
 
     <div class="container invisible" id="results">
