@@ -47,16 +47,10 @@
       Entrez votre ville : <input type="text" name="ville"/><br/>
       <input type="submit" name="valider" value="OK"/>
   </form>
-  <?php
-  if(isset($_POST['valider'])){
-      $pseudo=$_POST['pseudo'];
-      $ville=$_POST['ville'];
-      echo 'Salut '. $pseudo.'de '. $ville.'<br/>Bienvenue sur mon site !';
-  }
-  ?>
 
 
-    <div class="container invisible" id="results">
+
+    <div class="container" id="results">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
@@ -64,6 +58,13 @@
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ month</small></h1>
+            <?php
+            if(isset($_POST['valider'])){
+                $pseudo=$_POST['pseudo'];
+                $ville=$_POST['ville'];
+                echo 'Salut '. $pseudo.'de '. $ville.'<br/>Bienvenue sur mon site !';
+            }
+            ?>
             <ul class="list-unstyled mt-3 mb-4">
               <li>10 users included</li>
               <li>2 GB of storage</li>
