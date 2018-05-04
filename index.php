@@ -2,7 +2,6 @@
 if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
 
-
 if ( in_array($bill, range(0,150000)) ) {
 $t1=$bill;
 $entsuppbill='15000';
@@ -28,6 +27,36 @@ $finalbill = ($bill-1000000);
 $t4 = ($finalbill*3/100);
 $entsuppbill=($t1+$t2+$t3+$t4);
 }
+
+if ( in_array($bill, range(0,10000)) ) {
+  $bu1=$bill;
+  $=($bu1*10/100);
+  }
+  if ( in_array($bill, range(10000,80000)) ) {
+  $bu1='1000';
+  $finalbubill = ($bill-80000);
+  $bu2 = ($finalbubill*7/100);
+  $busupport=($bu1+$bu2);
+  }
+  if ( in_array($bill, range(80000,250000)) ) {
+  $bu1='1000';
+  $bu2='4900';
+  $finalbubill = ($bill-80000);
+  $bu3 = ($finalbubill*5/100);
+  $busupport=($bu1+$bu2+$bu3);
+  }
+  if ( $bill > '250000' ) {
+  $bu1='1000';
+  $bu2='4900';
+  $bu3='8500';
+  $finalbubill = ($bill-250000);
+  $bu4 = ($finalbubill*3/100);
+  $busupport=($bu1+$bu2+$bu3+$bu4);
+  }
+
+
+$devsupport=($bill*3/100);
+
 }
 ?>
 <!DOCTYPE html>
@@ -95,26 +124,23 @@ $entsuppbill=($t1+$t2+$t3+$t4);
             <h4 class="my-0 font-weight-normal">Business</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ month</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $busupport.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
+              <li>Tiers 1 : <?php echo ' $ : '. $bu1.' ';?></li>
+              <li>Tiers 2 : <?php echo ' $ : '. $bu2.' ';?></li>
+              <li>Tiers 3 : <?php echo ' $ : '. $bu3.' ';?></li>
+              <li>Tiers 4 : <?php echo ' $ : '. $bu4.' ';?></li>
             </ul>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+            <h4 class="my-0 font-weight-normal">Developer</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ month</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $devsupport.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>3% of monthly usage</li>
             </ul>
           </div>
         </div>
