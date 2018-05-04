@@ -104,13 +104,13 @@ num.text = numString
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
+              <li>Tiers 1 : <?php echo ' $ : '. $t1.' ';?></li>
+              <li>Tiers 2 : <?php echo ' $ : '. $t2.' ';?></li>
+              <li>Tiers 3 : <?php echo ' $ : '. $t3.' ';?></li>
+              <li>Tiers 4 : <?php echo ' $ : '. $t4.' ';?></li>
             </ul>
             <p>
-              <?php echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';?>
+            /*  <?php echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';?>*/
             </p>
           </div>
         </div>
