@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['valider'])){
+if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
 
 
@@ -84,7 +84,7 @@ num.text = numString
       <form method="post" attribute="" action="">
         <div class="row">
           <div class="col">
-            <input type="number" name="valider"  class="form-control" placeholder="Monthly Bill">
+            <input type="number" name="bill"  class="form-control" placeholder="Monthly Bill">
           </div>
           <div class="col">
             <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
