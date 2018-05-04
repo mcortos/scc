@@ -30,7 +30,7 @@ $entsuppbill=($t1+$t2+$t3+$t4);
 
 if ( in_array($bill, range(0,10000)) ) {
   $bu1=$bill;
-  $=($bu1*10/100);
+  $busupport=($bu1*10/100);
   }
   if ( in_array($bill, range(10000,80000)) ) {
   $bu1='1000';
