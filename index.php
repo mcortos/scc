@@ -84,7 +84,7 @@ num.text = numString
       <form method="post" attribute="" action="">
         <div class="row">
           <div class="col">
-            <input type="number" name ="bill" class="form-control" placeholder="Monthly Bill">
+            <input type="number" name="valider"  class="form-control" placeholder="Monthly Bill">
           </div>
           <div class="col">
             <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
@@ -95,13 +95,6 @@ num.text = numString
 
     </div>
   
-    <form name="inscription" method="post" action="">
-      Bill : <input type="text" name="bill"/><br/>
-      <input type="number" name="valider" value="OK"/>
-  </form>
-
-
-
     <div class="container" id="results">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
