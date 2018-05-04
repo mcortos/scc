@@ -101,6 +101,7 @@ $devsupport=($bill*3/100);
         <div class="row">
           <div class="col">
             <input type="number" name="bill"  class="form-control" placeholder="Monthly Bill">
+            <input type="number" name="discount"  class="form-control" placeholder="Discount ?">
           </div>
           <div class="col">
             <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
