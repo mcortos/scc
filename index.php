@@ -28,14 +28,9 @@ $finalbill = ($bill-1000000);
 $t4 = ($finalbill*3/100);
 $entsuppbill=($t1+$t2+$t3+$t4);
 }
-
-
-echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';
-
-
-
 }
 ?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -68,7 +63,7 @@ echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  
       <form method="post" attribute="" action="">
         <div class="row">
           <div class="col">
-            <input type="text" name ="bill" class="form-control" placeholder="Monthly Bill">
+            <input type="number" name ="bill" class="form-control" placeholder="Monthly Bill">
           </div>
           <div class="col">
             <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
