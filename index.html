@@ -1,4 +1,41 @@
-<!doctype html>
+<?php
+if(isset($_POST['valider'])){
+    $bill=$_POST['bill'];
+
+
+if ( in_array($bill, range(0,150000)) ) {
+$t1=$bill;
+$entsuppbill='15000';
+}
+if ( in_array($bill, range(150000,500000)) ) {
+$t1='15000';
+$finalbill = ($bill-150000);
+$t2 = ($finalbill*7/100);
+$entsuppbill=($t1+$t2);
+}
+if ( in_array($bill, range(500000,1000000)) ) {
+$t1='15000';
+$t2='24500';
+$finalbill = ($bill-500000);
+$t3 = ($finalbill*5/100);
+$entsuppbill=($t1+$t2+$t3);
+}
+if ( $bill > '1000000' ) {
+$t1='15000';
+$t2='24500';
+$t3='25000';
+$finalbill = ($bill-1000000);
+$t4 = ($finalbill*3/100);
+$entsuppbill=($t1+$t2+$t3+$t4);
+}
+
+
+echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';
+
+
+
+}
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -47,44 +84,7 @@
       <input type="submit" name="valider" value="OK"/>
   </form>
 
-  <?php
-  if(isset($_POST['valider'])){
-      $bill=$_POST['bill'];
 
-
-if ( in_array($bill, range(0,150000)) ) {
-$t1=$bill;
-$entsuppbill='15000';
-}
-if ( in_array($bill, range(150000,500000)) ) {
-$t1='15000';
-$finalbill = ($bill-150000);
-$t2 = ($finalbill*7/100);
-$entsuppbill=($t1+$t2);
-}
-if ( in_array($bill, range(500000,1000000)) ) {
-$t1='15000';
-  $t2='24500';
-  $finalbill = ($bill-500000);
-$t3 = ($finalbill*5/100);
-  $entsuppbill=($t1+$t2+$t3);
-}
-if ( $bill > '1000000' ) {
-  $t1='15000';
-  $t2='24500';
-$t3='25000';
-  $finalbill = ($bill-1000000);
-  $t4 = ($finalbill*3/100);
-  $entsuppbill=($t1+$t2+$t3+$t4);
-}
-
-
-echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';
-  
-
-
-}
-?>
 
     <div class="container" id="results">
       <div class="card-deck mb-3 text-center">
