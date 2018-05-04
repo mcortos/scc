@@ -32,27 +32,6 @@ $entsuppbill=($t1+$t2+$t3+$t4);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript">
-var numString; //this keeps track of the valid string
-
-//check the input after a key press
-function checkinput(e){
-
-//this gets the value of the key pressed
-var aplhaNumericCode=e.keyCode? e.keyCode : e.charCode
-
-//if the key is a number then add it to the number string. (This is not actual js code.)
-if(aplhaNumericCode>=65 //*a*/ || aplhaNumericCode>=90//*z*/)
-    putnum()
-else
-    alert (keyPressed)
-}
-//enter the valid string in the text box (This is not actual js code.)
-function putnum(){
-var num = document.getElementByID("number")
-num.text = numString 
-}
-</script>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -109,9 +88,6 @@ num.text = numString
               <li>Tiers 3 : <?php echo ' $ : '. $t3.' ';?></li>
               <li>Tiers 4 : <?php echo ' $ : '. $t4.' ';?></li>
             </ul>
-            <p>
-            /*  <?php echo ' Bill : '. $bill.' <br> EntSup1 : '. $t1.' <br> EntSup2 : '. $t2.'  <br>  EntSup3 : '. $t3.'  <br> EntSup4 : '. $t4.'  <br> SupportBill : '. $entsuppbill.'';?>*/
-            </p>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
