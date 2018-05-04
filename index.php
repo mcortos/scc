@@ -34,7 +34,7 @@ if ( in_array($bill, range(0,10000)) ) {
   }
   if ( in_array($bill, range(10000,80000)) ) {
   $bu1='1000';
-  $finalbubill = ($bill-80000);
+  $finalbubill = ($bill-10000);
   $bu2 = ($finalbubill*7/100);
   $busupport=($bu1+$bu2);
   }
