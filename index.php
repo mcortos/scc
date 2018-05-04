@@ -2,28 +2,36 @@
 if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
 
-if ( in_array($bill, range(0,150000)) ) {
-$t1=$bill;
+
+    if(isset($_POST['discount'])){
+      $discount=$_POST['discount'];
+      $entbill=($bill-$discount);
+    } else {
+    $entbill=$bill-$discount;
+  } 
+
+if ( in_array($entbill, range(0,150000)) ) {
+$t1=$entbill;
 $entsuppbill='15000';
 }
-if ( in_array($bill, range(150000,500000)) ) {
+if ( in_array($entbill, range(150000,500000)) ) {
 $t1='15000';
-$finalbill = ($bill-150000);
+$finalbill = ($entbill-150000);
 $t2 = ($finalbill*7/100);
 $entsuppbill=($t1+$t2);
 }
-if ( in_array($bill, range(500000,1000000)) ) {
+if ( in_array($entbill, range(500000,1000000)) ) {
 $t1='15000';
 $t2='24500';
-$finalbill = ($bill-500000);
+$finalbill = ($entbill-500000);
 $t3 = ($finalbill*5/100);
 $entsuppbill=($t1+$t2+$t3);
 }
-if ( $bill > '1000000' ) {
+if ( $entbill > '1000000' ) {
 $t1='15000';
 $t2='24500';
 $t3='25000';
-$finalbill = ($bill-1000000);
+$finalbill = ($entbill-1000000);
 $t4 = ($finalbill*3/100);
 $entsuppbill=($t1+$t2+$t3+$t4);
 }
