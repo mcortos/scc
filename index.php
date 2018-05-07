@@ -12,9 +12,6 @@ if(isset($_POST['submit'])){
   } 
 
 
-
-
-
 if ( in_array($entbill, range(0,150000)) ) {
 $t1=$entbill;
 $entsuppbill='15000';
@@ -144,7 +141,7 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-            <table class="table table-dark">
+            <table class="table">
               <tbody>
                 <tr>
                   <th scope="row">0-150K</th>
