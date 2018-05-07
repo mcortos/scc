@@ -1,9 +1,12 @@
 <?php
 if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
-    if(isset($_POST['bill'])){
+   
+    if(isset($_POST['discount']) AND !isset($_POST['bill']) ){
+    $display="none";
+    }else{
     $display="inline";
-    } 
+    }
 
 
     if(isset($_POST['discount'])){
