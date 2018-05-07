@@ -15,12 +15,17 @@ if(isset($_POST['submit'])){
 if ( in_array($entbill, range(0,150000)) ) {
 $t1=$entbill;
 $entsuppbill='15000';
+$t2="0";
+$t3="0";
+$t4="0";
 }
 if ( in_array($entbill, range(150000,500000)) ) {
 $t1='15000';
 $finalbill = ($entbill-150000);
 $t2 = ($finalbill*7/100);
 $entsuppbill=($t1+$t2);
+$t3="0";
+$t4="0";
 }
 if ( in_array($entbill, range(500000,1000000)) ) {
 $t1='15000';
@@ -28,6 +33,7 @@ $t2='24500';
 $finalbill = ($entbill-500000);
 $t3 = ($finalbill*5/100);
 $entsuppbill=($t1+$t2+$t3);
+$t4="0";
 }
 if ( $entbill > '1000000' ) {
 $t1='15000';
@@ -41,12 +47,17 @@ $entsuppbill=($t1+$t2+$t3+$t4);
 if ( in_array($bill, range(0,10000)) ) {
   $bu1=$bill;
   $busupport=($bu1*10/100);
+  $bu2="0";
+  $bu3="0";
+  $bu4="0";
   }
   if ( in_array($bill, range(10000,80000)) ) {
   $bu1='1000';
   $finalbubill = ($bill-10000);
   $bu2 = ($finalbubill*7/100);
   $busupport=($bu1+$bu2);
+  $bu3="0";
+  $bu4="0";
   }
   if ( in_array($bill, range(80000,250000)) ) {
   $bu1='1000';
@@ -54,6 +65,7 @@ if ( in_array($bill, range(0,10000)) ) {
   $finalbubill = ($bill-80000);
   $bu3 = ($finalbubill*5/100);
   $busupport=($bu1+$bu2+$bu3);
+  $bu4="0";
   }
   if ( $bill > '250000' ) {
   $bu1='1000';
