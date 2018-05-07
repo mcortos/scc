@@ -141,15 +141,23 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-            <table class="table">
+            <table class="table table-dark">
               <tbody>
                 <tr>
                   <th scope="row">0-150K</th>
-                  <td><?php echo '$2000'. $t1.' ';?></td>
+                  <td><?php echo '$'. $t1.' ';?></td>
                 </tr>
                 <tr>
                   <th scope="row">150-500K</th>
-                  <td><?php echo '$2000'. $t1.' ';?></td>
+                  <td><?php echo '$'. $t2.' ';?></td>
+                </tr>
+                <tr>
+                  <th scope="row">500K-1M</th>
+                  <td><?php echo '$'. $t3.' ';?></td>
+                </tr>
+                <tr>
+                  <th scope="row">+1M</th>
+                  <td><?php echo '$'. $t4.' ';?></td>
                 </tr>
                 </tbody>
             </table>  
