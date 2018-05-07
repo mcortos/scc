@@ -12,9 +12,7 @@ if(isset($_POST['submit'])){
   } 
 
 
-}else{
-  $display="none";
-}
+
 
 
 if ( in_array($entbill, range(0,150000)) ) {
@@ -72,6 +70,8 @@ if ( in_array($bill, range(0,10000)) ) {
 
 $devsupport=($bill*3/100);
 
+}else{
+  $display="none";
 }
 ?>
 <!DOCTYPE html>
