@@ -121,10 +121,10 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4" style="text-align:left">
-              <li>Tiers 1 : <?php echo ' 0-150K    : $'. $t1.' ';?></li>
-              <li>Tiers 2 : <?php echo ' 150K-500K : $'. $t2.' ';?></li>
-              <li>Tiers 3 : <?php echo ' 500K-1M   : $'. $t3.' ';?></li>
-              <li>Tiers 4 : <?php echo ' +1M       : $'. $t4.' ';?></li>
+              <li>Tiers 1 : <?php echo '0-150K&ensp;&ensp;&ensp;: $'. $t1.' ';?></li>
+              <li>Tiers 2 : <?php echo '150K-500K : $'. $t2.' ';?></li>
+              <li>Tiers 3 : <?php echo '500K-1M   : $'. $t3.' ';?></li>
+              <li>Tiers 4 : <?php echo '+1M       : $'. $t4.' ';?></li>
             </ul>
           </div>
         </div>
@@ -134,11 +134,11 @@ $devsupport=($bill*3/100);
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $busupport.'';?> <small class="text-muted">/ month</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Tiers 1 : <?php echo ' $ : '. $bu1.' ';?></li>
-              <li>Tiers 2 : <?php echo ' $ : '. $bu2.' ';?></li>
-              <li>Tiers 3 : <?php echo ' $ : '. $bu3.' ';?></li>
-              <li>Tiers 4 : <?php echo ' $ : '. $bu4.' ';?></li>
+            <ul class="list-unstyled mt-3 mb-4" style="text-align:left">
+              <li>Tiers 1 : <?php echo ' 0-10K    : $'. $bu1.' ';?></li>
+              <li>Tiers 2 : <?php echo ' 10-80K    : $'. $bu2.' ';?></li>
+              <li>Tiers 3 : <?php echo ' 80-250K    : $'. $bu3.' ';?></li>
+              <li>Tiers 4 : <?php echo ' +250K    : $'. $bu4.' ';?></li>
             </ul>
           </div>
         </div>
