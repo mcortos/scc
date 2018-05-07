@@ -125,22 +125,6 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li><span style="text-align:left">0-150K</span><span style="text-align:right"><?php echo '$2000'. $t1.' ';?></span></li>
-              <li><p>150-500K</p><p><?php echo '$234555'. $t2.' ';?></p></li>
-              <br>
-              <li>Tiers 3 : <?php echo '500K-01M $'. $t3.' ';?></li>
-              <li>Tiers 4 : <?php echo '+01M    &emsp;&emsp;&emsp;&emsp;&emsp;    $'. $t4.' ';?></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise Table</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
             <table class="table table-dark">
               <tbody>
                 <tr>
@@ -158,6 +142,37 @@ $devsupport=($bill*3/100);
                 <tr>
                   <th scope="row">+1M</th>
                   <td><?php echo '$'. $t4.' ';?></td>
+                </tr>
+                </tbody>
+            </table> 
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise Table</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+            <table class="table table-dark">
+              <tbody>
+                <tr>
+                  <th scope="row">0-10K</th>
+                  <td><?php echo '$'. $bu1.' ';?></td>
+                </tr>
+                <tr>
+                  <th scope="row">10-80K</th>
+                  <td><?php echo '$'. $bu2.' ';?></td>
+                </tr>
+                <tr>
+                  <th scope="row">80-250K</th>
+                  <td><?php echo '$'. $bu3.' ';?></td>
+                </tr>
+                <tr>
+                  <th scope="row">+250K</th>
+                  <td><?php echo '$'. $bu4.' ';?></td>
                 </tr>
                 </tbody>
             </table>  
