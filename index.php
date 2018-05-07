@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
+    $display="inline";
 
 
     if(isset($_POST['discount'])){
@@ -10,8 +11,7 @@ if(isset($_POST['submit'])){
     $entbill=$bill-$discount;
   } 
 
-  if(isset($_POST['submit'])){
-    $display="inline";
+
 }else{
   $display="none";
 }
