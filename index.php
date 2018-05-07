@@ -10,6 +10,13 @@ if(isset($_POST['submit'])){
     $entbill=$bill-$discount;
   } 
 
+  if(isset($_POST['submit'])){
+    $display="inline";
+}else{
+  $display="none";
+}
+
+
 if ( in_array($entbill, range(0,150000)) ) {
 $t1=$entbill;
 $entsuppbill='15000';
@@ -112,7 +119,7 @@ $devsupport=($bill*3/100);
 
     </div>
   
-    <div class="container" id="results">
+    <div class="container" id="results" style="display : <?php echo ''. $display.'';?>">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
