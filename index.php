@@ -121,10 +121,10 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4" style="text-align:left">
-              <li>Tiers 1 : <?php echo '0-150K  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $'. $t1.' ';?></li>
-              <li>Tiers 2 : <?php echo '150K-500K &nbsp;&nbsp;&nbsp; $'. $t2.' ';?></li>
-              <li>Tiers 3 : <?php echo '500K-1M  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $'. $t3.' ';?></li>
-              <li>Tiers 4 : <?php echo '+1M    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    $'. $t4.' ';?></li>
+              <li>Tiers 1 : <?php echo '0-150K  &emsp;&emsp;&emsp;&emsp;  $'. $t1.' ';?></li>
+              <li>Tiers 2 : <?php echo '150K-500K &emsp;&emsp; $'. $t2.' ';?></li>
+              <li>Tiers 3 : <?php echo '500K-1M  &emsp;&emsp;&emsp;&emsp;  $'. $t3.' ';?></li>
+              <li>Tiers 4 : <?php echo '+1M    &emsp;&emsp;&emsp;&emsp;&emsp;    $'. $t4.' ';?></li>
             </ul>
           </div>
         </div>
