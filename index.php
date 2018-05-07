@@ -189,19 +189,7 @@ $devsupport=($bill*3/100);
               <tbody>
                 <tr>
                   <th scope="row"></th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
                   <td>3% of monthly usage</td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td></td>
                 </tr>
                 </tbody>
             </table>  
