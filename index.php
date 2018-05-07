@@ -115,11 +115,13 @@ $devsupport=($bill*3/100);
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <form method="post" attribute="" action="">
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <input type="number" name="bill"  class="form-control" placeholder="Monthly Bill">
+          </div>
+          <div class="col-xs-4">
             <input type="number" name="discount"  class="form-control" placeholder="Discount ?">
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <button type="submit"  class="btn btn-primary" name="submit" id="submit" value="submit">Calculate</button>
           </div>
         </div>
