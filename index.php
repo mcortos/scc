@@ -148,14 +148,13 @@ $devsupport=($bill*3/100);
             </ul>
           </div>
         </div>
-
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise Table</h4>
+            <h4 class="my-0 font-weight-normal">Business</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $entsuppbill.'';?> <small class="text-muted">/ month</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
+            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $busupport.'';?> <small class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4" style="text-align:left">
             <table class="table table-dark">
               <tbody>
                 <tr>
@@ -179,28 +178,6 @@ $devsupport=($bill*3/100);
             </ul>
           </div>
         </div>
-
-
-
-
-
-
-
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Business</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo ' $ '. $busupport.'';?> <small class="text-muted">/ month</small></h1>
-            <ul class="list-unstyled mt-3 mb-4" style="text-align:left">
-              <li>Tiers 1 : <?php echo ' 0-10K    : $'. $bu1.' ';?></li>
-              <li>Tiers 2 : <?php echo ' 10-80K    : $'. $bu2.' ';?></li>
-              <li>Tiers 3 : <?php echo ' 80-250K    : $'. $bu3.' ';?></li>
-              <li>Tiers 4 : <?php echo ' +250K    : $'. $bu4.' ';?></li>
-            </ul>
-          </div>
-        </div>
         <div class="card mb-4 box-shadow">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Developer</h4>
@@ -208,7 +185,26 @@ $devsupport=($bill*3/100);
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo ' $ '. $devsupport.'';?> <small class="text-muted">/ month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>3% of monthly usage</li>
+              <table class="table table-dark">
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>3% of monthly usage</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                </tr>
+                </tbody>
+            </table>  
             </ul>
           </div>
         </div>
