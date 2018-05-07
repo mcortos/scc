@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']) AND isset($_POST['bill'])){
     $bill=$_POST['bill'];
     $display="inline";
 
