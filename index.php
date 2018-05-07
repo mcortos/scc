@@ -1,7 +1,9 @@
 <?php
 if(isset($_POST['submit'])){
     $bill=$_POST['bill'];
+    if(isset($_POST['bill'])){
     $display="inline";
+    } 
 
 
     if(isset($_POST['discount'])){
