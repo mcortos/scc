@@ -119,7 +119,7 @@ $devsupport=($bill*3/100);
 
     </div>
   
-    <div class="container" id="results" style="display : <?php echo ''. $display.'';?>">
+    <div class="container" id="results" style="display :<?php echo ''. $display.'';?>">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
